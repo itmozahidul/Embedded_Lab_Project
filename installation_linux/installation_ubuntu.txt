@@ -1,0 +1,32 @@
+This assumes a ubuntu based distribution and having apt-get
+For other linux distros please consider checking which packages contain the above mentioned tools
+
+The programs required for this project are:
+
+gcc and make:
+	gcc
+	make
+
+avr toolchain:
+	avr-gcc
+	avr-objcopy
+	avr-objdump
+	avr-size
+	avrdude
+
+for debugging and integration tests:
+	python 3
+
+make and gcc: 
+	sudo apt-get install build-essential
+avr toolchain:
+	sudo apt-get install avr-libc binutils-avr gcc-avr avrdude
+
+Python:
+	sudo apt install python3-pip python3
+
+Optional:
+	terminal editor:
+	nano: sudo apt-get install nano
+
+The makefile assumes that all above mentioned programs are found in the system path.

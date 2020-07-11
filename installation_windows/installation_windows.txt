@@ -1,0 +1,46 @@
+Install MSYS2:
+	https://www.msys2.org/
+	installs an *nix like environment for windows
+
+Install VS Code:
+	https://code.visualstudio.com/
+	Useful extensions:
+		C/C++ 
+		C++ Intellisense
+
+Install the compilation tools for make and GCC:
+	open MinGW
+	execute: pacman -S --needed base-devel mingw-w64-i686-toolchain mingw-w64-x86_64-toolchain
+	execute: pacman -S nano
+
+	Check installation by executing:
+		gcc --version
+		make --version
+
+Install git bash for windows:
+	https://gitforwindows.org/
+
+Install avr-gcc and avrdude:
+	Use git to clone the installation scripts:
+	open Git bash:
+		make a git directory
+		execute: 
+			git clone https://github.com/es-ude/Embedded-Systems-Exercise.git
+	This creates a directory called "embedded-systems-exercise"
+	
+	open MinGW
+		Navigate to the cloned repository directory
+		enter <Path To Repo>/embedded-systems-exercise/installation_windows/
+		execute: ./msys2_install.sh
+	Restart MinGW so that the installation takes effect
+	Check if installation works by running: avr-gcc --version
+
+Debugging tools:
+	Download the latest python3 version: https://www.python.org
+	test by running from the windows console: python --version
+
+To create an exercise source code project folder:
+	Copy the Makefile to an empty folder of your likeing
+	open mingw and navigate to it
+	run: make createProjectFolder
+
